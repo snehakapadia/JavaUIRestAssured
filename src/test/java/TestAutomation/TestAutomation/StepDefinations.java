@@ -52,7 +52,7 @@ public class StepDefinations {
 	@Before
 	public void setup()
 	{
-		String configFileName = "config.properties";
+		String configFileName = "ConfigFiles/config.properties";
 		
 		try {
 			config.load(new FileInputStream(configFileName));
@@ -61,7 +61,7 @@ public class StepDefinations {
 			e.printStackTrace();
 		}
 		
-		configFileName = "xpath.properties";
+		configFileName = "ConfigFiles/xpath.properties";
 		 
 		try {
 			xpath.load(new FileInputStream(configFileName));
@@ -71,10 +71,10 @@ public class StepDefinations {
 		}
 	}
 	
-	@After
+	@When("User closes the browser")
 	public void closeBrowser()
 	{
-		driver.quit();
+		driver.close();
 	}
 	
 	@Given("User navigates to {string} webpage")
@@ -262,7 +262,7 @@ public class StepDefinations {
 		JSONParser jsonParser = new JSONParser();
         String body = null;
         Object obj = null;
-        try (FileReader reader = new FileReader("store.json"))
+        try (FileReader reader = new FileReader("JsonFiles/store.json"))
         {
             obj = jsonParser.parse(reader);
             body = obj.toString();
@@ -307,7 +307,7 @@ public class StepDefinations {
 		JSONParser jsonParser = new JSONParser();
         String body = null;
         Object obj = null;
-        try (FileReader reader = new FileReader("user.json"))
+        try (FileReader reader = new FileReader("JsonFiles/user.json"))
         {
             obj = jsonParser.parse(reader);
             body = obj.toString();
@@ -427,7 +427,7 @@ public class StepDefinations {
         JSONParser jsonParser = new JSONParser();
         String body = null;
         Object obj = null;
-        try (FileReader reader = new FileReader("pet.json"))
+        try (FileReader reader = new FileReader("JsonFiles/pet.json"))
         {
             obj = jsonParser.parse(reader);
             body = obj.toString();
@@ -477,7 +477,7 @@ public class StepDefinations {
 		JSONParser jsonParser = new JSONParser();
         String body = null;
         Object obj = null;
-        try (FileReader reader = new FileReader("user.json"))
+        try (FileReader reader = new FileReader("JsonFiles/user.json"))
         {
             obj = jsonParser.parse(reader);
             body = obj.toString();

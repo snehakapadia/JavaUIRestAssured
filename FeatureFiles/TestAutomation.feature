@@ -7,6 +7,7 @@ Feature: Testing a basic scenario in Test Automation
 		And User clicks on "Search_Button" button
 		Then User "can" see "Search_Result_text"
 		And User verifies the basic search results
+		When User closes the browser
 	
 	Scenario: Checking the basic search on Wikipedia
 		Given User navigates to "Wikipedia" webpage
@@ -15,13 +16,14 @@ Feature: Testing a basic scenario in Test Automation
 		When User enters "Not_These_Words" as "GUI"
 		And User clicks on "Search_Button" button
 		Then User verifies the advanced search results
+		When User closes the browser
 		
 
 	Scenario: User Adds a pet & validates if its added
 		When User adds a pet to the store
 		And User gets the pet by the id
 		
-	Scenario: User Adds a pet & delets the pet
+	Scenario: User Adds a pet & deletes the pet
 		When User adds a pet to the store
 		#And User gets the pet by the id
 		Then User deletes the pet
