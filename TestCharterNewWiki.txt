@@ -1,0 +1,29 @@
+Test Charter : Analyze functionality of Wikipedia page
+Start: 01/27/2022 11:00
+Tester: Sneha Kapadia
+Duration: Normal (60-90 mins)
+Purpose: To evaluate if the search functionality is working properly & it is searching all required keywords.
+Setup: Google chrome
+Priority: Medium
+Data: Keywords
+Activities: 
+1.Verify whether Search functionality is working properly or not.
+2. Verify if all links from left hand side are functioning properly.
+3. Verify if Wikipedia logo is functioning properly.
+4. Verify if Help text is functioning properly & opening in other page.
+5. Verify if WIKIMEDIA & Powered by MediaWiki these logos are opening & functioning properly.
+6. Verify if Not logged in is disabled if user is not logged in.
+7. Verify if Log in is enable so user can login.
+8. Verify Create Account if user is not having login credentials.
+9. Verify Auto-intenseness functionality on search textbox is working properly.
+10. Enter 'Automation Testing' text in textbox & Click on Advanced search dropdown & in Not these words textbox enter text 'GUI' & click on search . Verify that in search results no GUI text should get populated.
+11. Enter 'Automation Testing' text in textbox & Click on Search button.Verify related results are populated. Then click on back arrow & verify if again search functionality of wikipoedia is coming.
+12. Verify all fields in Advance Search dropdown.
+13. Verify all fields in Search in: dropdown.
+
+
+Enhancements: 
+1.On clicking on the webedit, recent search history is not shown in Auto-intenseness textarea which can be treated as an enhancement.
+2. Enter 'Automation Testing' text in webedit & Click on Search button. On results page View (previous 20 | next 20) (20 | 50 | 100 | 250 | 500) coming at the end. So we can give an option to increase number of results per page according to user e.g 100 results per page.As currently it is restricted to 20 initially. It can be a user selectable field and user should have an option of selecting the results per page.
+
+ 
